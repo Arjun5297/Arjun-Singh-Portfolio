@@ -8,7 +8,7 @@ const links = {
   qaHub: 'https://www.linkedin.com/company/qa-automation-hub/',
   googleCertification:
     'https://cloud.google.com/learn/certification/generative-ai-leader',
-
+github: 'https://github.com/Arjun5297',
   // Replace this with your exact personal LinkedIn profile URL.
   linkedinProfile: 'https://www.linkedin.com/',
 }
@@ -222,9 +222,19 @@ function App() {
               <a className="button button-primary" href="#projects">
                 Explore my work <ArrowUpRight />
               </a>
-              <a className="button button-secondary" href="#contact">
+            {/*  <a className="button button-secondary" href="#contact">
                 Let's connect
-              </a>
+              </a> */}
+              
+<a
+  className="btn btn-secondary"
+  href={`${import.meta.env.BASE_URL}assets/Arjun-Singh-Resume.pdf`}
+  download="Arjun-Singh-Resume.pdf"
+>
+  Download Resume
+  <span aria-hidden="true">↓</span>
+</a>
+
             </div>
 
             <div className="hero-facts">
@@ -296,9 +306,9 @@ function App() {
             </span>
           </div>
           <div>
-            <span className="stat-number">CI/CD</span>
+            <span className="stat-number">10+  CI/CD</span>
             <span className="stat-label">
-              Automation pipeline integration
+              Automation pipeline integration & creations
             </span>
           </div>
         </section>
@@ -613,6 +623,14 @@ function App() {
             >
               Email me <ArrowUpRight />
             </a>
+             <a
+              className="button button-secondary"
+              href={links.github}
+               target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <ArrowUpRight />
+            </a>
             <a
               className="button button-secondary"
               href={links.linkedinProfile}
@@ -622,13 +640,12 @@ function App() {
               LinkedIn profile <ArrowUpRight />
             </a>
             <a
-              className="button button-secondary"
+              className="button button-primary"
               href={links.qaHub}
-              target="_blank"
-              rel="noreferrer"
             >
               QA Automation Hub <ArrowUpRight />
             </a>
+            
           </div>
 
           <div className="contact-details">
