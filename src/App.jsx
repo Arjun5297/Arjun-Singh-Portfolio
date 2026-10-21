@@ -249,7 +249,7 @@ function App() {
 
             <div className="portrait-frame">
               <img
-                src="/assets/profile.png"
+                src="public/assets/profile.png"
                 alt="Arjun Singh professional portrait"
                 onError={(event) => {
                   event.currentTarget.style.display = 'none'
